@@ -1,11 +1,11 @@
 
 import os
+# \usepackage{xeCJK}
 
 def to_head( projectpath ):
     pathlayers = os.path.join( projectpath, 'layers/' ).replace('\\', '/')
     return r"""
 \documentclass[border=8pt, multi, tikz]{standalone} 
-\usepackage{xeCJK}
 \usepackage{import}
 \subimport{"""+ pathlayers + r"""}{init}
 \usetikzlibrary{positioning}
@@ -20,6 +20,7 @@ def to_cor():
 \def\PoolReluColor{rgb:red,2;black,0.3}
 \def\UnpoolColor{rgb:blue,2;green,1;black,0.3}
 \def\FcColor{rgb:blue,5;red,2.5;white,5}
+\def\BatchNcolor{rgb:blue,19;green,69;red,139}
 \def\FcReluColor{rgb:blue,5;red,5;white,4}
 \def\SoftmaxColor{rgb:magenta,2.5;black,7}   
 %\def\SoftmaxReluColor{rgb:magenta,5;black,7}   
@@ -266,6 +267,22 @@ def to_SoftMax( name, s_filer=10, offset="(0,0,0)", to="(0,0,0)", width=1.5, hei
         xlabel={{" ","dummy"}},
         zlabel="""+ str(s_filer) +""",
         fill=\SoftmaxColor,
+        opacity="""+ str(opacity) +""",
+        height="""+ str(height) +""",
+        width="""+ str(width) +""",
+        depth="""+ str(depth) +"""
+        }
+    };
+"""
+
+# BatchNorm
+def to_BN(name, offset="(0,0,0)", to="(0,0,0)", width=1, height=32, depth=32, opacity=0.5, caption=" "):
+    return r"""
+\pic[shift={ """+ offset +""" }] at """+ to +""" 
+    {Box={
+        name="""+name+""",
+        caption="""+ caption +r""",
+        fill=\BatchNcolor,
         opacity="""+ str(opacity) +""",
         height="""+ str(height) +""",
         width="""+ str(width) +""",
