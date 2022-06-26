@@ -1,10 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1655943520 "binary.xdv" "binary.pdf" "binary" 1655943527
-  "binary.xdv" 1655943520 828824 e11588deac87e80908408c12501e0082 "xelatex"
+["xdvipdfmx"] 1655981309 "binary.xdv" "binary.pdf" "binary" 1655981311
+  "binary.xdv" 1655981309 119488 ad12c3d9c5bb580eaa0b222bef9938c4 "xelatex"
   (generated)
   "binary.pdf"
-["xelatex"] 1655943502 "d:/Quinten/Documents/Github/PlotNeuralNet/pyexamples/binary.tex" "binary.xdv" "binary" 1655943527
-  "../inputs/sdf.png" 1655817288 1084237 80b1348fdfc0e6ee79224f1a00cb99e5 ""
+["xelatex"] 1655981306 "d:/Quinten/Documents/Github/PlotNeuralNet/pyexamples/binary.tex" "binary.xdv" "binary" 1655981311
   "../inputs/sdf_to_binary.png" 1655817292 104727 d36837c37d342c14231cbb16949080db ""
   "../layers/../layers//Ball.sty" 1655932882 1197 8d61d7a65aefe72c071ac1a167972b13 ""
   "../layers/../layers//Box.sty" 1655932882 4943 25d4a28c571abe1e184949d9b194ab99 ""
@@ -106,9 +105,9 @@
   "D:/Programs/MiKTeX 2.9/tex/latex/tools/shellesc.sty" 1636713860 4118 0f286eca74ee36b7743ff20320e5479f ""
   "D:/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
   "D:/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "binary.aux" 1655943520 32 3985256e7290058c681f74d7a3565a19 "xelatex"
-  "binary.tex" 1655943499 48728 011608b1aff4290fb47ca6cd3417b425 ""
-  "d:/Quinten/Documents/Github/PlotNeuralNet/pyexamples/binary.tex" 1655943499 48728 011608b1aff4290fb47ca6cd3417b425 ""
+  "binary.aux" 1655981309 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "binary.tex" 1655981305 9714 d4928c44d1b71f416ca709df239859b8 ""
+  "d:/Quinten/Documents/Github/PlotNeuralNet/pyexamples/binary.tex" 1655981305 9714 d4928c44d1b71f416ca709df239859b8 ""
   (generated)
   "binary.aux"
   "binary.log"

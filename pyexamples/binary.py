@@ -15,7 +15,7 @@ inputs = [
     # "../inputs/velocity.png",
     # "../inputs/velocity.png",
 ]
-print(len(inputs))
+# print(len(inputs))
 
 N_channels = len(inputs)
 Nx = 256
@@ -35,13 +35,13 @@ filter_max = 64
 scaling = 4
 lin_size = 256 // scaling
 
-
+conv_layers = []
 for i, input in enumerate(inputs):
-    print(i)
+    # print(i)
     conv_layers.append(
         to_input(
             input,
-            to=f"({-1-len(inputs)+i},0,0)",
+            to=f"({-len(inputs)+i},0,0)",
             width=Nx // scaling // 4,
             height=Ny // scaling // 4,
         )
@@ -111,7 +111,11 @@ for i in range(N_conv):
     to = f"(pool{i+1}-east)"
     filter = 2 * filter
 
-flatten_size = Nx * Ny * filter
+print(Nx)
+print(Ny)
+print(filter)
+
+flatten_size = Nx * Ny * filter // 2
 conv_layers.append(
     to_Flatten(
         "flatten_1",
@@ -191,7 +195,7 @@ arch = [
 ]
 
 
-print(arch)
+# print(arch)
 
 
 def main():
